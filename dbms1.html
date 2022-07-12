@@ -3,15 +3,45 @@
 <title> Blood Donation Management</title>
 </head>
 <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0;
+}
+
+body{
+    background: #7F7FD5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+justify-content: center;
+align-items: center;
+}
 img
 {
 border-radius:50%;
 }
+
+.box{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: 50px;
+}
 </style>
-<body bgcolor="#F5DEB3">
-<img src="donation.jpg" align="left" width="150" height="100">
-<img src="d2.jpg" align="right" width="100" height="80">
-<h1><center style="color:green;">Blood Donation Management</h1></center>
-<br><p align="right">YESU RAJU PARUSU<br>208W1A12C8</p>
+<body >
+<img src="donation.jpg"  width="150" height="100">
+<h1>Blood Donation Management</h1>
+<div class="box">
+    <img src="d2.jpg"  width="100" height="80">
+    <br><p>YESU RAJU PARUSU<br>208W1A12C8</p>
+</div>
+
 </body>
 </html>
